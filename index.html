@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
+    />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="header-logo" alt="logo" src="./src/fcc_primary_large.svg" />
+      </div>
+      <h1 class="title">Survey Form</h1>
+      <p class="description">
+        Thanks for taking your time to help us improve the platform
+      </p>
+    </header>
+    <form class="survey-form">
+      <div class="form-group">
+        <label for="name" class="name-label">Complete Name</label>
+        <input class="name" type="text" required placeholder="Jhon Doe" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="email-label">Email</label>
+        <input
+          class="email"
+          type="email"
+          required
+          placeholder="JohnDoe@email.com"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" class="number-label">Age</label>
+        <input
+          class="number"
+          type="number"
+          min="18"
+          max="35"
+          placeholder="18 - 35"
+          name="age"
+          pattern="[1-9]{2}"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="dropdown" class="dropdown-label"
+          >Which option best describes your current role?</label
+        >
+        <select class="dropdown" id="dropdown" name="role" required>
+          <option class="dropdown-option" disabled selected value>
+            Select Current Role
+          </option>
+          <option class="dropdown-option" value="student">Student</option>
+          <option class="dropdown-option" value="fulltime-job">
+            Full Time Job
+          </option>
+          <option class="dropdown-option" value="unemployed">Unemployed</option>
+          <option class="dropdown-option" value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label class="radio-label"
+          ><input
+            type="radio"
+            id="radio1"
+            name="radio"
+            value="definitely"
+            class="radio-option"
+          />Definitely</label
+        >
+        <label class="radio-label"
+          ><input
+            type="radio"
+            id="radio2"
+            name="radio"
+            value="maybe"
+            class="radio-option"
+          />Maybe</label
+        >
+        <label class="radio-label"
+          ><input
+            type="radio"
+            id="radio3"
+            name="radio"
+            value="not-sure"
+            class="radio-option"
+          />Not Sure</label
+        >
+      </div>
+      <div class="form-group">
+        <p>Do you have any of these certificates?</p>
+        <label
+          ><input
+            type="checkbox"
+            class="checkbox"
+            id="curso1"
+            name="curso1"
+            value="html"
+          />
+          <p class="checkbox-option">HTML</p></label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="checkbox"
+            id="curso2"
+            name="curso2"
+            value="css"
+          />
+          <p class="checkbox-option">CSS</p></label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="checkbox"
+            id="curso3"
+            name="curso3"
+            value="js"
+          />
+          <p class="checkbox-option">Javascript</p></label
+        >
+        <label
+          ><input
+            type="checkbox"
+            id="curso4"
+            name="curso4"
+            value="none"
+            class="checkbox"
+          />
+          <p class="checkbox-option">I have not completed any program</p></label
+        >
+      </div>
+      <div class="form-group">
+        <label for="comments">
+          What would you like to improve on our platform?
+        </label>
+        <textarea
+          class="comments"
+          required
+          placeholder="Comments :D"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn-submit" />
+      </div>
+    </form>
+    <footer class="footer">
+      
+    </footer>
+  </body>
+</html>
